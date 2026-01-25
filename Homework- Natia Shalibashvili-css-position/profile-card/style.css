@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue: rgba(25, 161, 174, 1);
+    --gray:rgba(107, 112, 130, 1);
+    --light-gray: rgba(232, 233, 236, 1);
+    --navy: rgba(46, 51, 73, 1);
+    --font: "Kumbh Sans", sans-serif;
+}
+
+
+body{
+    background-color: var(--blue);
+    font-family: var(--font);
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-card {
+    width: 350px;
+    height: auto;
+    border-radius: 2px solid black;
+    margin: 105px auto;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card-top img{
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body{
+    background-color: white;
+    text-align: center; 
+    border-bottom: 1px solid rgba(232, 233, 236, 1);  
+}
+
+
+.card-body img {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    border: 5px solid white;  
+    margin-top: -40px;
+}
+
+.card-body h3 {
+    padding: 16px 0 8px 0;
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-body p {
+    padding-bottom: 24px;
+    color:var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-body h3 > span {
+    color:var(--gray);
+    font-weight: 400;
+
+}
+
+
+.card-bottom {
+    display: flex;
+    gap:36px;
+    text-align: center;
+    justify-content: center;
+}
+
+.card-bottom h4 {
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.card-bottom p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    color:var(--gray);
+
+}
+
+
+.oval-top img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.oval-bottom img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 0;
+}
+
+
+.oval-top {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+}
+
+/* ზედა მარცხენა ოვალი */
+body::before {
+  content: "";
+  position: absolute;
+  width: 977px;
+  height: 977px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(9, 137, 180, 0), rgba(83, 255, 238, 1));
+  top: 100px;
+  left: 700px;
+  z-index: -1;
+  opacity: 25%;
+}
+
+/* ზედა მარჯვენა ოვალი */
+body::after {
+  content: "";
+  position: absolute;
+  width: 977px;
+  height: 977px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(9, 137, 180, 0), rgba(83, 255, 238, 1));
+  bottom: 100px;
+  right: 750px;
+  z-index: -1;
+  opacity: 15%;
+}
+
+
+
+ 
+
+
+
+
+
+
+
